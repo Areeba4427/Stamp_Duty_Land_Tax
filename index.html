@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stamp Duty Land Tax</title>
+</head>
+
+<body>
+    <div class="calculator sdlt-calculator">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Calculate your Stamp Duty Land Tax</h2>
+                <label>Property Price</label>
+            </div>
+            <div class="col-md-6">
+                <div class="key"><span>£</span></div>
+                <input class="calculator-price js-price-format" type="text" id="purchase_price"
+                    onkeypress='return num(event)' value="300,000">
+                <p class="stamp-error invalid-label">Please enter a numerical value</p>
+            </div>
+        </div>
+        <div class="row calculator-results">
+            <div class="stamp-results">
+                <div class="col-lg-12">
+                    <h3 class="results">Results:</h3>
+                </div>
+            </div>
+            <section class="results-list col-lg-12">
+                <table id="mytable">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h5 class="tb">Stamp Duty Land Tax to pay:</h5>
+                                <div class="calculator-amount-to-pay stamp-red tb" id="stamp_duty">£ 4,500.00</div>
+                            </td>
+                            <td>
+                                <h5 class="tb">Effective Rate:</h5>
+                                <div class="calculator-effective-new-rate stamp-red tb" id="effective_rate">1.5%</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <div class="col-lg-12 results-table">
+                <h3>How the Land &amp; Buildings Tax is calculated</h3>
+
+                <table class="calculator-results-table">
+                    <tbody>
+                        <tr>
+                            <th style="width: 28%;">Tax Band</th>
+                            <th style="width: 16%;">%</th>
+                            <th style="width: 28%;">Taxable Sum</th>
+                            <th style="width: 28%;">Tax</th>
+                        </tr>
+                        <tr>
+                            <td>£0 - £150,000</td>
+                            <td>0%</td>
+                            <td  id="taxable_sum_1" >£150,000</td>
+                            <td id="tax1">£0.00</td>
+                        </tr>
+                        <tr>
+                            <td>£150,000 - £250,000</td>
+                            <td>2%</td>
+                            <td id="taxable_sum_2">£100,000</td>
+                            <td  id="tax2">£2,000.00</td>
+                        </tr>
+                        <tr>
+                            <td>£250,000+</td>
+                            <td>5%</td>
+                            <td  id="taxable_sum_3">£50,000</td>
+                            <td  id="tax3">£2,500</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <script src="asset.js"></script>
+</body>
+
+</html>

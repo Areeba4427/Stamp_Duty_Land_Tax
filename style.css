@@ -1,0 +1,248 @@
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:,wght@1,600&family=Ubuntu:wght@300&display=swap');
+
+html {
+    max-width: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+h2{
+    font-size: 22px;
+    line-height: 30px;
+
+}
+body, body li, body p {
+    line-height: 1.42857;
+    font-size: 13px;
+    font-family: 'Ubuntu', sans-serif;
+  
+}
+body {
+    line-height: 1.42857;
+    color: #333;
+    background-color: #fff;
+}
+.col-md-6{
+    max-width: 40%;
+}
+.calculator {
+    margin: 50px 100px;
+ }
+label{
+    margin: 10px 0 5px;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight:500 !important;   
+}
+.calculator .key {
+    border-right: none;
+    color: #696a6f;
+    line-height: 40px;
+    padding: 0px;
+    position: absolute;
+    float: left;
+    border: none;
+    background: #fefefe;
+    margin-right: 0px;
+    width: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 50px;
+    border-right: 1px solid #ccc;
+    margin-left: 2px;
+    margin-top: 2px;
+   background-color: #FEFEFE;
+}
+
+.calculator input {
+    width: calc(100% - 50px);
+    outline: none;
+    /* padding: 6px 12px; */
+    background-color: #fff;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: top;
+    height: 50px;
+    padding-left: 70px;
+}
+.calculator input:focus{
+    border: 1px solid lightblue;
+}
+
+
+.row{
+    margin-left: -15px;
+    margin-right: -15px;
+        max-width: none!important;
+        width: initial!important;
+}
+
+.results{
+    color: #d0103a;
+    font-size: 24px;
+    line-height: 28px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+    
+}
+
+table {
+    border-spacing: 0;
+    background-color: transparent;
+    display: table;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+    width: 100%;
+
+}
+
+
+.calculator .results-list table {
+    width: 100%;
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+}
+.calculator .results-list table td:first-child {
+    border-right: 1px solid #f1f1f1;
+}
+
+.calculator .results-list table td {
+    width: 50%;
+    padding: 0px 10px;
+}
+
+#mytable td{
+    padding: 20px 20px;
+}
+.calculator h5{
+    
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0px;
+    margin: 4px;
+    
+}
+.calculator .results-list table td div {
+   font-family: 'Ubuntu', sans-serif;
+    font-weight: 800 !important;
+    font-size: 25px;
+}
+.calculator .results-table h3 {
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.calculator .results-table table th  {
+    border-bottom: 1px solid #d0103a;
+}
+
+.calculator .results-table table td, .calculator .results-table table th {
+    padding: 10px 0px;
+    text-align: left;
+}
+
+.calculator .results-table table td {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+
+@media screen and (max-width:990px){
+
+    .col-md-6{
+        max-width: 100%;
+    }    
+}
+
+@media screen and (max-width:890px){
+
+    
+    .col-md-6{
+        max-width: 97%;
+    }    
+
+    .calculator {
+        margin: 50px 50px;
+     }
+
+}
+
+@media screen and (max-width:670px){
+
+    .calculator {
+        margin: 50px 30px;
+     }
+
+    
+.calculator h5{
+
+    font-size: 16px;
+    padding: 0px;
+    margin: 4px;
+    
+}
+.col-md-6{
+    max-width: 95%;
+} 
+}
+
+@media screen and (max-width:550px){
+
+    #mytable td{
+        padding: 20px 10px;
+    }
+    .calculator h5{
+
+        font-size: 14px;
+        padding: 0px;
+        margin: 4px;
+        
+    }
+    .col-md-6{
+        max-width: 93%;
+    } 
+
+    .calculator {
+        margin: 50px 25px;
+     }
+
+   
+}
+@media screen and (max-width:300px){
+    .calculator .results-list table td div {
+        font-family: 'Ubuntu', sans-serif;
+         font-weight: 800 !important;
+         font-size: 20px;
+     }
+
+     
+     .calculator .results-table table th {
+  font-size: 12px;
+}
+
+}
+
+/* @media (min-width: 992px){
+
+    #research-results .list-view .bootstrap .research-item, .bootstrap #research-results .list-view .research-item, .bootstrap .col-md-6 {
+        width: 50%;
+    }
+    .col-lg-12 , .col-md-6, .bootstrap .col-md-7, .bootstrap .col-md-8, .bootstrap .col-md-9, .bootstrap .research-search-options .country-column, .research-search-options .bootstrap .country-column {
+        float: left;
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+} */
